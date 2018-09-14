@@ -21,6 +21,7 @@ def is_prime(num):
         bool = False
 
     return bool
+
 def prm_lys(num):
     ran = range(2,num)
     ran2 = rm_even(ran)
@@ -28,9 +29,11 @@ def prm_lys(num):
     for i in ran:
         if is_prime(i) == True:
             lys.append(i)
+            print("Prime # " +str(lys.index(i)+1)+":"+" "+str(lys[-1]))
+
     return lys
 
 
-x = prm_lys(150000)
+x = prm_lys(4000000)
 print(len(x))
-print(x[9999])
+#print(x[9999])
