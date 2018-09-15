@@ -34,6 +34,6 @@ def prm_lys(num):
     return lys
 
 
-x = prm_lys(4000000)
+x = prm_lys(1000000)
 print(len(x))
 #print(x[9999])
