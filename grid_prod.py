@@ -39,8 +39,10 @@ def rev_list(ly_of_ly):
     return final_lys
 
 x = make_lol(ly,0,20,20,20)
-
-print(x)
+lyyy = [[1,2,3],[4,5,6],[7,8,9]]
+print("###############")
+print(rev_list(lyyy))
+#####print(x)
 print("Length of LoL: " + str(len(x)))
 print("Length of 1st El: " + str(len(x[0])))
 print(x[0])
@@ -59,21 +61,37 @@ def get_diag(lyst):
     for i in lyst:
         for j in i:
             temp_lys = []
-            if j.index(j) < 17:
+            if i.index(j) < 17 and lyst.index(i) < 17:
                 temp_lys.append(j)
                 temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
                 temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
                 temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
-                final_lys.append(temp_lys)
+                final_lys.append(temp_lys[:])
                 temp_lys.clear()
     return final_lys
+
+def get_diag_rev(ly_of_ly):
+    final_lys = []
+    
+    for i in lyst:
+        for j in i:
+            temp_lys = []
+            if i.index(j) < 17 and lyst.index(i) < 17:
+                temp_lys.append(j)
+                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
+                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
+                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
+                final_lys.append(temp_lys[:])
+                temp_lys.clear()
+    return final_lys
+
 
 def get_hor():
     final_lys = []
     for i in lyst:
         for j in i:
             temp_lys = []
-            if j.index(j) < 17:
+            if i.index(j) < 17:
                 temp_lys.append(j)
                 temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
                 temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
@@ -88,7 +106,7 @@ def get_ver():
     for i in lyst:
         for j in i:
             temp_lys = []
-            if j.index(j) < 17:
+            if i.index(j) < 17:
                 temp_lys.append(j)
                 temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
                 temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
@@ -112,4 +130,6 @@ def get_hor2():
                 temp_lys.clear()
     return final_lys
 fir_ly =[x[0][0],x[1][1],x[2][2],x[3][3]]
+print("fir")
 print(fir_ly)
+print(get_diag(x))
