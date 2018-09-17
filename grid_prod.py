@@ -40,22 +40,7 @@ def rev_list(ly_of_ly):
 
 x = make_lol(ly,0,20,20,20)
 lyyy = [[1,2,3],[4,5,6],[7,8,9]]
-print("###############")
-print(rev_list(lyyy))
 #####print(x)
-print("Length of LoL: " + str(len(x)))
-print("Length of 1st El: " + str(len(x[0])))
-print(x[0])
-#Diagonal && Reverse
-##consider i and j. the 3-diagonals of the current position 2nd:x[i+1][j+1]
-##3rd:x[i+2][j+2], 4th[i+3][j+3]
-##run the same algorithm over a reversed list of lists
-#Horizontal && Rev.
-##
-##
-#Vertical && Rev.
-##
-##
 def get_diag(lyst):
     final_lys = []
     for i in lyst:
@@ -70,9 +55,9 @@ def get_diag(lyst):
                 temp_lys.clear()
     return final_lys
 
-def get_diag_rev(ly_of_ly):
+def get_diag_rev(lyst):
     final_lys = []
-    
+    lyst = rev_list(lyst)
     for i in lyst:
         for j in i:
             temp_lys = []
@@ -86,50 +71,71 @@ def get_diag_rev(ly_of_ly):
     return final_lys
 
 
-def get_hor():
+def get_hor(lyst):
     final_lys = []
     for i in lyst:
         for j in i:
             temp_lys = []
             if i.index(j) < 17:
                 temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
-                final_lys.append(temp_lys)
+                temp_lys.append(lyst[lyst.index(i)][i.index(j)+1])
+                temp_lys.append(lyst[lyst.index(i)][i.index(j)+2])
+                temp_lys.append(lyst[lyst.index(i)][i.index(j)+3])
+                final_lys.append(temp_lys[:])
                 temp_lys.clear()
     return final_lys
 
-def get_ver():
+def get_hor_rev(lyst):
+    final_lys = []
+    lyst = rev_list(lyst)
+    for i in lyst:
+        for j in i:
+            temp_lys = []
+            if i.index(j) < 17:
+                temp_lys.append(j)
+                temp_lys.append(lyst[lyst.index(i)][i.index(j)+1])
+                temp_lys.append(lyst[lyst.index(i)][i.index(j)+2])
+                temp_lys.append(lyst[lyst.index(i)][i.index(j)+3])
+                final_lys.append(temp_lys[:])
+                temp_lys.clear()
+    return final_lys
+
+
+def get_ver(lyst):
     #Need to change rules
     final_lys = []
     for i in lyst:
         for j in i:
             temp_lys = []
-            if i.index(j) < 17:
+            if lyst.index(i) < 17:
                 temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
-                final_lys.append(temp_lys)
+                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)])
+                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)])
+                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)])
+                final_lys.append(temp_lys[:])
                 temp_lys.clear()
     return final_lys
 
-def get_hor2():
-    #need to change rules
+def get_ver_rev(lyst):
     final_lys = []
+    lyst = rev_list(lyst)
     for i in lyst:
         for j in i:
             temp_lys = []
-            if j.index(j) < 17:
+            if lyst.index(i) < 17:
                 temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
-                final_lys.append(temp_lys)
+                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)])
+                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)])
+                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)])
+                final_lys.append(temp_lys[:])
                 temp_lys.clear()
     return final_lys
-fir_ly =[x[0][0],x[1][1],x[2][2],x[3][3]]
-print("fir")
-print(fir_ly)
+
+def get_ver_rev(lyst):
+    None
+
 print(get_diag(x))
+print("#############################################################################")
+print(get_hor(x))
+print("#############################################################################")
+print(get_ver(x))
