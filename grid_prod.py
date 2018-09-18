@@ -1,3 +1,5 @@
+from functools import reduce
+
 ly = list([8,2,22,97,38,15,00,40,00,75,4,5,7,78,52,12,50,77,91,8
 ,49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 00,
 81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65,
@@ -39,25 +41,10 @@ def rev_list(ly_of_ly):
     return final_lys
 
 x = make_lol(ly,0,20,20,20)
-lyyy = [[1,2,3],[4,5,6],[7,8,9]]
+rev_x = rev_list(x)
 #####print(x)
 def get_diag(lyst):
     final_lys = []
-    for i in lyst:
-        for j in i:
-            temp_lys = []
-            if i.index(j) < 17 and lyst.index(i) < 17:
-                temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
-                final_lys.append(temp_lys[:])
-                temp_lys.clear()
-    return final_lys
-
-def get_diag_rev(lyst):
-    final_lys = []
-    lyst = rev_list(lyst)
     for i in lyst:
         for j in i:
             temp_lys = []
@@ -85,20 +72,7 @@ def get_hor(lyst):
                 temp_lys.clear()
     return final_lys
 
-def get_hor_rev(lyst):
-    final_lys = []
-    lyst = rev_list(lyst)
-    for i in lyst:
-        for j in i:
-            temp_lys = []
-            if i.index(j) < 17:
-                temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)][i.index(j)+3])
-                final_lys.append(temp_lys[:])
-                temp_lys.clear()
-    return final_lys
+
 
 
 def get_ver(lyst):
@@ -116,26 +90,34 @@ def get_ver(lyst):
                 temp_lys.clear()
     return final_lys
 
-def get_ver_rev(lyst):
-    final_lys = []
-    lyst = rev_list(lyst)
-    for i in lyst:
-        for j in i:
-            temp_lys = []
-            if lyst.index(i) < 17:
-                temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)])
-                final_lys.append(temp_lys[:])
-                temp_lys.clear()
-    return final_lys
 
-def get_ver_rev(lyst):
-    None
 
-print(get_diag(x))
-print("#############################################################################")
-print(get_hor(x))
-print("#############################################################################")
-print(get_ver(x))
+
+
+
+
+horiz = get_hor(x)
+verti = get_ver(x)
+diag = get_diag(x)
+horiz_rev = get_hor(rev_x)
+verti_rev = get_ver(rev_x)
+diag_rev = get_diag(rev_x)
+
+#get the greatest number from a list of lists
+def lol_scan(lol):
+    reg_list = []
+    for i in lol:
+        reg_list.append(reduce(lambda x, y: x*y,  i))
+    return max(reg_list)
+
+print("###########################################")
+list_one = []
+list_one.append(lol_scan(horiz))
+list_one.append(lol_scan(verti))
+list_one.append(lol_scan(diag))
+list_one.append(lol_scan(horiz_rev))
+list_one.append(lol_scan(verti_rev))
+list_one.append(lol_scan(diag_rev))
+print(list_one)
+print(max(list_one))
+print(rev_x)
