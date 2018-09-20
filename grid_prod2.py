@@ -68,6 +68,26 @@ def get_diag(lyst):
         index_i += 1
     return final_lys
 
+def get_diag_rev(lyst):
+    final_lys = []
+    index_i = 0
+    for i in lyst:
+        index_j = 0
+        for j in i:
+            temp_lys = []
+            if index_j > 2 and index_i < 17:
+                temp_lys.append(j)
+                temp_lys.append(lyst[index_i+1][index_j-1])
+                temp_lys.append(lyst[index_i+2][index_j-2])
+                temp_lys.append(lyst[index_i+3][index_j-3])
+                final_lys.append(temp_lys[:])
+                temp_lys.clear()
+            else:
+                pass
+            index_j += 1
+        index_i += 1
+    return final_lys
+
 
 def get_hor(lyst):
     final_lys = []
@@ -95,16 +115,22 @@ def get_hor(lyst):
 def get_ver(lyst):
     #Need to change rules
     final_lys = []
+    index_i = 0
     for i in lyst:
+        index_j = 0
         for j in i:
             temp_lys = []
-            if lyst.index(i) < 17:
+            if index_i < 17:
                 temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)])
+                temp_lys.append(lyst[index_i+1][index_j])
+                temp_lys.append(lyst[index_i+2][index_j])
+                temp_lys.append(lyst[index_i+3][index_j])
                 final_lys.append(temp_lys[:])
                 temp_lys.clear()
+            else:
+                pass
+            index_j += 1
+        index_i += 1
     return final_lys
 
 def lol_scan(lol):
@@ -134,7 +160,7 @@ rev = rev_list(list_of_list)
 ver = get_ver(list_of_list)
 hor = get_hor(list_of_list)
 diag = get_diag(list_of_list)
-rev_diag = get_diag(rev)
+rev_diag = get_diag_rev(list_of_list)
 
 final = []
 final.append(lol_scan(hor))
@@ -154,4 +180,4 @@ for i in diag:
     iter += 1
     print(str(iter) + ":"+ " "+ str(i))
 
-print(lol_scan(diag))
+#print(lol_scan(rev_diag))
