@@ -50,31 +50,43 @@ numbers = flatten(list_of_list)
 
 def get_diag(lyst):
     final_lys = []
+    index_i = 0
     for i in lyst:
+        index_j = 0
         for j in i:
             temp_lys = []
-            if i.index(j) < 17 and lyst.index(i) < 17:
+            if index_j < 17 and index_i < 17:
                 temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)+1][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)+2][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)+3][i.index(j)+3])
+                temp_lys.append(lyst[index_i+1][index_j+1])
+                temp_lys.append(lyst[index_i+2][index_j+2])
+                temp_lys.append(lyst[index_i+3][index_j+3])
                 final_lys.append(temp_lys[:])
                 temp_lys.clear()
+            else:
+                pass
+            index_j += 1
+        index_i += 1
     return final_lys
 
 
 def get_hor(lyst):
     final_lys = []
+    index_i = 0
     for i in lyst:
+        index_j = 0
         for j in i:
             temp_lys = []
-            if i.index(j) < 17:
+            if index_j < 17:
                 temp_lys.append(j)
-                temp_lys.append(lyst[lyst.index(i)][i.index(j)+1])
-                temp_lys.append(lyst[lyst.index(i)][i.index(j)+2])
-                temp_lys.append(lyst[lyst.index(i)][i.index(j)+3])
+                temp_lys.append(lyst[index_i][index_j+1])
+                temp_lys.append(lyst[index_i][index_j+2])
+                temp_lys.append(lyst[index_i][index_j+3])
                 final_lys.append(temp_lys[:])
                 temp_lys.clear()
+            else:
+                pass
+            index_j += 1
+        index_i += 1
     return final_lys
 
 
@@ -101,13 +113,45 @@ def lol_scan(lol):
         reg_list.append(reduce(lambda x, y: x*y,  i))
     return max(reg_list)
 
+def lol_scan_test(lol):
+    reg_list = []
+    for i in lol:
+        reg_list.append(reduce(lambda x, y: x*y,  i))
+    return reg_list
+
+def rev_list(ly_of_ly):
+    nu_lys = []
+
+    for i in ly_of_ly:
+        nu_lys.append(list(reversed(i)))
+
+    final_lys = list(reversed(nu_lys))
+    return final_lys
+
+rev = rev_list(list_of_list)
+
+
 ver = get_ver(list_of_list)
 hor = get_hor(list_of_list)
 diag = get_diag(list_of_list)
+rev_diag = get_diag(rev)
 
 final = []
 final.append(lol_scan(hor))
 final.append(lol_scan(ver))
 final.append(lol_scan(diag))
+final.append(lol_scan(rev_diag))
 print(final)
 print(max(final))
+
+print(diag)
+diag2 = lol_scan_test(diag)
+
+print(1788696 in diag2)
+
+iter = 0
+for i in diag:
+    iter += 1
+    print(str(iter) + ":"+ " "+ str(i))
+
+print(lol_scan(diag))
