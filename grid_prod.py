@@ -110,6 +110,9 @@ def lol_scan(lol):
         reg_list.append(reduce(lambda x, y: x*y,  i))
     return max(reg_list)
 
+
+
+
 print("###########################################")
 list_one = []
 list_one.append(lol_scan(horiz))
