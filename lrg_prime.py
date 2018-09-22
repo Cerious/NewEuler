@@ -27,17 +27,14 @@ def is_prime(num):
 def prime_lys(num):
     print("output1")
     lyst1 = list(range(2,round(math.sqrt(num)+1)))
-    #print(round(math.sqrt(num)+1))
-    #print(lyst1)
     nu_lyst = rm_even(lyst1)
     thrd = []
-    #print(nu_lyst)
+
     for i in nu_lyst:
         if num % i == 0:
             thrd.append(i)
     prm = []
-    #print("multiples:")
-    #print(thrd)
+
     for i in thrd:
         if is_prime(i) == True:
             prm.append(i)
