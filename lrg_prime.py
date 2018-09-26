@@ -21,9 +21,6 @@ def is_prime(num):
 
     return bool
 
-
-
-
 def prime_lys(num):
     print("output1")
     lyst1 = list(range(2,round(math.sqrt(num)+1)))
