@@ -12,3 +12,5 @@ def num_word_adder(num):
     return iterator
 
 print(num_word_adder(1000))
+
+#problem 17
