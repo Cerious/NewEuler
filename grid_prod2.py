@@ -75,7 +75,9 @@ def get_diag_rev(lyst):
         index_j = 0
         for j in i:
             temp_lys = []
-            if index_j > 2 and index_i < 17:
+            if index_j > 2 and index_i < 17:def factors(n):
+    return reduce(list.__add__,
+                ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0))
                 temp_lys.append(j)
                 temp_lys.append(lyst[index_i+1][index_j-1])
                 temp_lys.append(lyst[index_i+2][index_j-2])
