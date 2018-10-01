@@ -15,4 +15,3 @@ def times_list(lyst):
     return x
 
 
-print(times_list([2,2,2]))

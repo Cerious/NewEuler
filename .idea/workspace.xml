@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06134a6a-f1e3-4ff6-8044-071ed5361948" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Helpfl_funcs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpful_math.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20grid.py" beforeDir="false" afterPath="$PROJECT_DIR$/20grid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid_prod2.py" beforeDir="false" afterPath="$PROJECT_DIR$/grid_prod2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpful_math.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpful_math.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +19,11 @@
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,14 +39,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="351" />
-          <entry key="py" value="1332" />
+          <entry key="Python Console" value="373" />
+          <entry key="py" value="1947" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1683" />
+          <entry key="Python" value="2320" />
         </counts>
       </usages-collector>
     </session>
@@ -64,35 +62,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/20grid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="158">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
-                <marker date="1538256015505" expanded="true" signature="323:340" ph="..." />
-                <marker date="1538256015505" expanded="true" signature="369:374" ph="..." />
-                <marker date="1538256015505" expanded="true" signature="369:393" ph="..." />
-                <marker date="1538256015505" expanded="true" signature="512:540" ph="..." />
+                <marker date="1538429774794" expanded="true" signature="233:261" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Helpfl_funcs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/helpful_math.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -110,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grid_prod2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+            <state relative-caret-position="2475">
+              <caret line="165" selection-start-line="165" selection-end-line="165" />
             </state>
           </provider>
         </entry>
@@ -124,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/triangle_numbers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="240">
               <caret line="17" column="77" selection-start-line="15" selection-end-line="17" selection-end-column="77" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -156,16 +133,16 @@
         <option value="$PROJECT_DIR$/one_onethousand.py" />
         <option value="$PROJECT_DIR$/grid_prod2.py" />
         <option value="$PROJECT_DIR$/Helpfl_funcs.py" />
-        <option value="$PROJECT_DIR$/20grid.py" />
         <option value="$PROJECT_DIR$/helpful_math.py" />
+        <option value="$PROJECT_DIR$/20grid.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1299" />
-    <option name="height" value="743" />
+    <option name="y" value="182" />
+    <option name="width" value="1289" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -218,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.helpful_math">
+  <component name="RunManager" selected="Python.20grid">
     <configuration name="20grid" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project-euler1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -311,9 +288,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.20grid" />
         <item itemvalue="Python.helpful_math" />
         <item itemvalue="Python.Helpfl_funcs" />
-        <item itemvalue="Python.20grid" />
         <item itemvalue="Python.one_onethousand" />
       </list>
     </recent_temporary>
@@ -341,22 +318,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="182" width="1289" height="555" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2460815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24802528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4984202" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3050571" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007962" side_tool="true" weight="0.32924694" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49920383" visible="true" weight="0.32626426" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50157976" side_tool="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49920383" weight="0.32470587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -384,22 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plain_numz.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prod_sum.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/triangle_numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="77" selection-start-line="15" selection-end-line="17" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sumsqr.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -408,23 +370,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid_prod2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+        <state relative-caret-position="2475">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/20grid.py">
+    <entry file="file://$PROJECT_DIR$/prod_sum.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/triangle_numbers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="240">
+          <caret line="17" column="77" selection-start-line="15" selection-end-line="17" selection-end-column="77" />
           <folding>
-            <marker date="1538256015505" expanded="true" signature="323:340" ph="..." />
-            <marker date="1538256015505" expanded="true" signature="369:374" ph="..." />
-            <marker date="1538256015505" expanded="true" signature="369:393" ph="..." />
-            <marker date="1538256015505" expanded="true" signature="512:540" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plain_numz.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Helpfl_funcs.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,8 +400,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helpful_math.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state>
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <marker date="1538429774794" expanded="true" signature="233:261" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
