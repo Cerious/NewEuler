@@ -3,7 +3,7 @@ head, *tri_str = file.read().splitlines()
 file.close()
 tri_str.insert(0, head[-2:])
 
-
+test_list = [[3],[7,4],[2,4,6],[8,5,9,3]]
 def strs_to_lyst(str_list):
     liist = []
     for i in str_list:
@@ -59,24 +59,17 @@ def genNeighbors(list_of_list):
             num += 1
             index_j += 1
         index_i += 1
-    print(right)
-    print(left)
 
-def left_paths(dictionary):
-    #i want to append the 4 downward neighbors to the list
-    lyst = []
-    addy = None
-    for i in range(0, 4):
-        #append addy
-        return None
-        #set addy to the left neigh of addy
+    final = right + left
+    return final
 
+def sum_max(listoflist):
+    list = []
+    for i in listoflist:
+        list.append(sum(i))
 
-def right_paths(dictionary):
-    return None
+    return max(list)
 
-i=0
-j=0
 lol = liststr_listlist(tri_str)
 tri_list = str_num_conv(lol)
 map = genNeighbors(tri_list)
@@ -84,3 +77,4 @@ map = genNeighbors(tri_list)
 
 print(map)
 
+#########################INCONCLUSIVE#############################
